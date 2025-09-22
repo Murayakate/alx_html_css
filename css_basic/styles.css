@@ -34,13 +34,22 @@ aside {
   flex: 1;
   overflow-y: auto; /* allow vertical scrolling */
 }
-.learners-table {//styling the table we made in earlier project, making it full width and adding borders and padding to the cells
+.logo {
+  /* simple logo styling (non-positioning) */
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2a6f97;
+  padding-right: 0.5rem;
+}
+
+/* styling the table we made in earlier project, making it full width and adding borders and padding to the cells */
+.learners-table {
   width: 100%;
   border-collapse: collapse;
 }
 
 .learners-table th{
-    font:bold;
+    font-weight: bold;
     border: 1px solid #d73b3b;
     padding: 0.5rem;
     text-align: left;
@@ -50,4 +59,8 @@ aside {
   border: 1px solid #ddd;
   padding: 0.5rem;
   text-align: left;
+}
+.logo:hover {
+  color: #f08a5d;
+  cursor: pointer;
 }
