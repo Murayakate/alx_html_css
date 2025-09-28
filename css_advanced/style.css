@@ -1,0 +1,480 @@
+/* Import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: #071629;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 35px 0;
+}
+
+nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 52px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.9;
+}
+
+/* Hero Section */
+main > section:first-of-type {
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(7, 22, 41, 0.8),
+        rgba(7, 22, 41, 0.9)
+    ),
+    url('./css_photos/Object.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+}
+
+/* Hero Content */
+main > section:first-of-type > div:first-of-type {
+    margin-bottom: 160px;
+}
+
+main > section:first-of-type h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.word-highlighting {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    margin: 20px 0 38px;
+}
+
+.word-highlighting span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main > section:first-of-type button {
+    background: #C271FF;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 13px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+main > section:first-of-type button:hover {
+    opacity: 0.9;
+}
+
+/* Learn from the pros section */
+main > section:first-of-type > div:nth-of-type(2) {
+    text-align: center;
+}
+
+main > section:first-of-type > div:nth-of-type(2) h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main > section:first-of-type > div:nth-of-type(2) h2 .highlight {
+    color: #C271FF;
+}
+
+/* Pros grid */
+main > section:first-of-type > div:nth-of-type(2) > div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual pro card */
+.pro-card {
+    text-align: center;
+    width: 150px;
+}
+
+.pro-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Testimonial section */
+main > section:nth-of-type(2) {
+    background: #C271FF;
+    padding: 100px 0;
+}
+
+main > section:nth-of-type(2) > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 56px;
+}
+
+main > section:nth-of-type(2) img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main > section:nth-of-type(2) > div > div {
+    text-align: left;
+    padding-top: 5px;
+}
+
+main > section:nth-of-type(2) blockquote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+    font-style: normal;
+}
+
+main > section:nth-of-type(2) h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+main > section:nth-of-type(2) p {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.pro-card h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.pro-card p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Tutorials section */
+.tutorials {
+    padding: 80px 0;
+    text-align: center;
+    background: white;
+    color: #071629;
+}
+
+.tutorials h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.tutorials .purple {
+    color: #C271FF;
+}
+
+.videos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-card {
+    max-width: 255px;
+}
+
+.video-thumb {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px !important;
+    height: 64px !important;
+    opacity: 0.9;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #071629;
+}
+
+.video-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.9);
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author h4 {
+    font-size: 14px;
+    color: #C271FF;
+    font-weight: 600;
+}
+
+.video-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars i {
+    color: #C271FF;
+    font-size: 14px;
+}
+
+.duration {
+    color: rgba(7, 22, 41, 0.9);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Membership section */
+.membership {
+    background: #071629;
+    padding: 70px 0;
+    text-align: center;
+    color: white;
+}
+
+.membership h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.membership .purple {
+    color: #C271FF;
+}
+
+.membership-grid {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 0 20px;
+}
+
+.membership-item {
+    width: 160px;
+}
+
+.membership-item img {
+    width: 45px;
+    height: 36px;
+    margin-bottom: 20px;
+    filter: invert(62%) sepia(98%) saturate(1752%) hue-rotate(228deg) brightness(100%) contrast(103%);
+}
+
+.membership-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.membership-item p {
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.9;
+}
+
+.register-btn {
+    background: #C271FF;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 13px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.register-btn:hover {
+    opacity: 0.9;
+}
+
+/* FAQ section */
+.faq {
+    padding: 90px 0;
+    background-color: #fff;
+    color: #071629;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+
+.faq-grid {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.faq-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.faq-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.8);
+}
+
+/* Footer section */
+.footer {
+    background: #071629;
+    padding: 90px 0 40px;
+}
+
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 170px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}

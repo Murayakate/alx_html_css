@@ -6,6 +6,8 @@ This repository contains the `index.html` file and associated stylesheets for th
 
 The `index.html` file serves as the structural backbone of the webpage. It is crafted using semantic HTML5 tags to ensure accessibility and provide a clear, logical document outline for both browsers and developers.
 
+
+
 ### Key Structural Components:
 
 *   **`<header>`**: Contains the main navigation, logo, and introductory content.
@@ -14,6 +16,29 @@ The `index.html` file serves as the structural backbone of the webpage. It is cr
 *   **`<footer>`**: Includes closing information, social media links, and copyright details.
 
 ## Advanced CSS Techniques Implemented
+
+## Visual preview
+
+Below are a few screenshots and assets from the project to help you quickly see what the page looks like and which images are used.
+
+- Hero background (page header area):
+
+![Hero background](./css_photos/Object.png)
+
+*Caption: The large background image used for the hero/header of the page.*
+
+- Sample instructor portrait (used in the instructors row):
+
+![Instructor example](./css_photos/1.png)
+
+*Caption: Example circular portrait used for the instructor cards.*
+
+- Project logo:
+
+![Logo](./css_photos/logo.png)
+
+*Caption: The site logo placed in the header and footer.*
+
 
 The styling for `index.html` leverages a variety of advanced CSS concepts to achieve a modern and responsive layout.
 
@@ -42,3 +67,20 @@ The styling for `index.html` leverages a variety of advanced CSS concepts to ach
 ---
 
 This project is part of the ALX Software Engineering program, focusing on building foundational and advanced skills in front-end development.
+## Quick tips to preview locally
+
+- Use a modern browser (Chrome, Firefox, Edge) and open `index.html` directly.
+- If images do not load, confirm the relative path `./css_photos/` exists and contains the PNG files.
+- For a simple local server (helpful for consistent asset loading), run a one-line server from the `css_advanced` folder (example for PowerShell):
+
+```powershell
+# from c:\path\to\css_advanced
+python -m http.server 8000
+```
+
+Then open http://localhost:8000 in your browser.
+
+## Notes
+
+- All images used in this README are included in the `css_photos` folder.
+- If you want annotated screenshots (callouts showing where CSS rules apply), I can add them — tell me which area you want annotated.
