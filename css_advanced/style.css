@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
     font-size: 16px;
     line-height: 1.5;
     color: white;
@@ -101,6 +101,23 @@ main > section:first-of-type h1 {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+/*bruce image*/
+.bruce{
+    border-radius: 50%;
+}
+
+.testimonial-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 56px;
 }
 
 main > section:first-of-type button {
